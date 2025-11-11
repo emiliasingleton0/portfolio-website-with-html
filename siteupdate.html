@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>♡ emi's portfolio</title>
+<link rel="icon" href="https://i.imgur.com/8ZSX4kW.gif">
+<style>
+/* Fonts */
+@font-face { font-family: kawaii stitch; src: url(https://dl.dropbox.com/s/yjal3we9j6biyn5/Kawaii%20Stitch.ttf);}
+@font-face { font-family: starborn; src: url(https://dl.dropbox.com/s/l0541on0m5eqvdj/Starborn.ttf);}
+@font-face { font-family: pixel; src: url(https://dl.dropbox.com/s/kmhe7d3n18vdz5e/w95fa.woff?dl=0);}
+@font-face { font-family: Frighted; src: url(https://dl.dropbox.com/s/ct0s037q78sao3f/Frighted.ttf);}
+@font-face { font-family: SakeMoru; src: url(https://dl.dropbox.com/s/ktlx5w7t8gk42nb/SakeMoru-Regular.ttf);}
+@font-face { font-family: yipes; src: url(https://dl.dropbox.com/s/qrdm3wived8sm66/Yipes.ttf);}
+@font-face { font-family: fenotype; src: url(https://dl.dropbox.com/s/klo6yfrf62916qp/02.10FEN.TTF);}
+
+body {
+  margin: 200;
+  padding: 1000;
+  background-image: url('https://jpgneocityhost.carrd.co/assets/images/image02.jpg?v=b157e117');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: SakeMoru;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar { width: 0; }
+
+.container {
+  border-width: 10px;
+  border-style: solid;
+  border-image: url("https://i.imgur.com/NJa4bp2.png") 8 fill round;
+  width: 884px;
+  height: 665px;
+  margin: auto;
+  position: relative;
+  padding: 5px;
+  background-repeat: repeat;
+  background-image: url('https://jpgneocityhost.carrd.co/assets/images/image02.jpg?v=fd7103ad');
+}
+
+.container-one {
+  border: 1px solid white;
+  width: 880px;
+  height: 170px;
+  position: relative;
+  left: 1px;
+  box-shadow: 0 0 8px 8px white inset;
+  z-index: 5;
+  background-image: url('https://jpgneocityhost.carrd.co/assets/images/image06.jpg?v=b157e117');
+  background-repeat: repeat;
+  background-size: 90px auto;
+}
+
+#name {
+  font-family: starborn;
+  font-size: 3em;
+  -webkit-text-stroke: 1px black;
+  color: #FFF5FC;
+  margin-top: 20px;
+  margin-left: 10px;
+  text-shadow: 0 0 6px #fff4fa, 0 0 12px #ffeaf5;
+}
+
+.outer {
+  border-width: 7px;
+  border-style: solid;
+  border-image: url("https://i.imgur.com/NJa4bp2.png") 8 fill round;
+  border-radius: 15px;
+  width: 115px;
+  height: 115px;
+  margin-top: 10px;
+  box-shadow: 0 0 8px #fff4fa;
+}
+.inner {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://jpgneocityhost.carrd.co/assets/images/image01.jpg?v=7504c318');
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.bg {
+  width: 50%;
+  position: relative;
+  top: -140px;
+  left: 138px;
+  background-image: url('https://jpgneocityhost.carrd.co/assets/images/image03.jpg?v=fd7103ad');
+  background-repeat: repeat;
+  box-shadow: 0 0 8px #fff4fa;
+  padding: 12px;
+}
+.in {
+  background: #FFF;
+  color: #000;
+  padding: 10px;
+  border-radius: 6px;
+  font-family: pixel;
+  font-size: 0.85em;
+  line-height: 1.3em;
+  text-align: left;
+  height: 103px;
+  overflow-y: auto;
+  border: 1px solid black;
+  box-shadow: inset 13px 0 6px -10px rgb(66 66 66 / 30%), inset -13px 0 6px -10px rgb(66 66 66 / 30%), inset 0 13px 6px -10px #f0f0f0, inset 0 0 0 -10px rgb(66 66 66 / 30%);
+}
+.in mark {
+  background: #FFE8EC;
+  color: white;
+  border-radius: 4px;
+  padding: 0 3px;
+}
+.intro {
+  font-family: starborn;
+  font-size: 1.1em;
+  color: #FFF5FC;
+  -webkit-text-stroke: 0.8px black;
+  text-align: center;
+  margin-bottom: 5px;
+  background-image: radial-gradient(#fff0f5 30%, transparent 70%);
+}
+
+.four {
+  width: 250px;
+  position: absolute;
+  top: 325px;
+  left: 5px;
+}
+.ipad {
+  width: 30em;
+  height: 20em;
+  padding: 1em 0.5em;
+  box-shadow: 0 0 12px #ffd6e7;
+}
+.apple {
+  height: 17em;
+  border-radius: 2px;
+  border: 2px inset #ffa6c9;
+}
+.chat {
+  height: 16em;
+  width: 18em;
+  overflow-y: scroll;
+  position: relative;
+  top: 0.4em;
+  left: 0.4em;
+  padding-right: 4px;
+}
+.bubble {
+  border-radius: 0px 25px 25px 25px;
+  padding: 7px;
+  background: #fff0f5;
+  font-family: pixel;
+  margin-bottom: 10px;
+  border: 1px solid #FFB0BE;
+  box-shadow: inset 13px 0 6px -10px rgb(255 182 193 / 60%), inset -13px 0 6px -10px rgb(255 182 193 / 60%), inset 0 13px 6px -10px #ffffff, inset 0 -13px 6px -10px rgb(255 182 193 / 38%);
+}
+.bubble2 {
+  border-radius: 25px 0px 25px 25px;
+  padding: 7px;
+  background: #FFA8DF;
+  font-family: pixel;
+  margin-bottom: 10px;
+  border: 1px solid #FFB0BE;
+  box-shadow: inset 13px 0 6px -10px rgb(255 182 193 / 60%), inset -13px 0 6px -10px rgb(255 182 193 / 60%), inset 0 13px 6px -10px #ffffff, inset 0 -13px 6px -10px rgb(255 182 193 / 38%);
+}
+
+.navi {
+  position: absolute;
+  top: 200px;
+  right: 5px;
+  width: 281px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.navi img {
+  display: block;
+  margin: 1px auto;
+  width: 150px;
+  height: auto;
+}
+.navi button {
+  width: 280px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: pixel;
+  font-size: 0.9em;
+  border-radius: 6px;
+  border: 1px solid #0D0D0D;
+  background-color: #FFE8EC;
+  cursor: pointer;
+}
+.navi button img {
+  width: 15px;
+  height: auto;
+}
+
+.comm {
+  width: 290px;
+  height: 280px;
+  position: absolute;
+  top: 330px;
+  right: 5px;
+  background: #ffffff;
+  border: 2px solid #FFD6DD;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #ffd6e7;
+  font-family: pixel;
+  font-size: 0.85em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.statusbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  background: #ffe3ec;
+  border-bottom: 1px dashed #ffbcd4;
+  color: #ff66a3;
+}
+.status-light {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff7eb8;
+  animation: blink 1.2s infinite;
+}
+@keyframes blink { 0%,100%{opacity:.3;} 50%{opacity:1;} }
+.status-text { font-weight: bold; font-size: 0.9em; }
+
+.comm .imagemask {
+  background: #ffe3ec;
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px dashed #FFD6DD;
+  color: #ff66a3;
+}
+
+.comm .top {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px;
+}
+.comm .top img { width: 40px; height: 40px; }
+
+.scrollbox {
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding: 8px 10px;
+  color: #6b4a55;
+  scrollbar-width: thin;
+  scrollbar-color: #ffc6d9 #fff0f5;
+}
+.scrollbox::-webkit-scrollbar { width: 6px; }
+.scrollbox::-webkit-scrollbar-track { background: #fff0f5; }
+.scrollbox::-webkit-scrollbar-thumb {
+  background: #FFD6DD;
+  border-radius: 10px;
+}
+hello { color: #ff66a3; font-weight: bold; }
+bye { color: #c64b7d; font-style: italic; }
+
+.bg-img {
+  position: absolute;
+  top: 320px;
+  left: 370px;
+  width: 180px;
+  height: auto; 
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="container-one">
+    <img src="http://media.tumblr.com/837a33b1ee5939149a9874e9b5c59168/tumblr_inline_mlm825BCTd1qz4rgp.gif"><img src="http://media.tumblr.com/837a33b1ee5939149a9874e9b5c59168/tumblr_inline_mlm825BCTd1qz4rgp.gif"><img src="http://media.tumblr.com/837a33b1ee5939149a9874e9b5c59168/tumblr_inline_mlm825BCTd1qz4rgp.gif"><img src="http://media.tumblr.com/837a33b1ee5939149a9874e9b5c59168/tumblr_inline_mlm825BCTd1qz4rgp.gif"><img src="http://media.tumblr.com/837a33b1ee5939149a9874e9b5c59168/tumblr_inline_mlm825BCTd1qz4rgp.gif">
+  
+    <div id="name">emi's portfolio</div>
+  </div>
+
+  <div class="outer"><div class="inner"></div></div>
+
+  <div class="bg">
+    <div class="in">
+      <div class="intro">introduction <img src="https://i.imgur.com/3ghgoru.gif"></div>
+      hi! i’m emi, a freshman it student at <mark>ucf</mark> ☁️  
+      i’m building my portfolio to showcase my work in <mark>html</mark>, <mark>css</mark>, and <mark>javascript</mark> (◡‿◡✿)  
+      my projects focus on clean, user-friendly designs with subtle pastel aesthetics, interactive elements, and playful animations  
+      i’m learning how to structure code efficiently and use modern web techniques to make my pages both functional and visually appealing (｡•́‿•̀｡)  
+      this portfolio is a space for me to experiment, share my progress, and explore how coding and design can come together in a calm, creative way  
+      <img src="https://i.imgur.com/yilpIlt.gif">
+    </div>
+  </div>
+
+  <div class="four">
+    <div class="ipad">
+      <div class="apple">
+        <div class="chat">
+          <div class="bubble">hey emi! what are you working on today?</div>
+          <div class="bubble2">oh hi!! i’ve been tinkering with some HTML and CSS for my portfolio page. i’m trying to make it super cute with pinks and pastel gifs</div>
+          <div class="bubble">ooh nice!! any new features or projects?</div>
+          <div class="bubble2">yep! i added this little iPad chat section where visitors can see cute messages pop up. it’s scrollable and the bubbles have shadows so they look like real chat bubbles</div>
+          <div class="bubble">are you learning anything fun or new coding stuff?</div>
+          <div class="bubble2">totally!! i’ve been practicing JavaScript and Python too. right now i’m focusing on front-end stuff like hover effects, gradients, and font animations</div>
+          <div class="bubble">can you show me a bit of your code?</div>
+          <div class="bubble2">sure!! i made these chat bubbles with different colors for sending vs receiving messages and added small gifs inside. it’s satisfying to see them all aligned and cute</div>
+          <div class="bubble">how’s your day going?</div>
+          <div class="bubble2">it’s going amazing!! just coding, adding gifs, tweaking borders, and keeping everything pastel and fun. can’t wait to finish my portfolio</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navi -->
+  <div class="navi">
+    <img src="http://th1128.photobucket.com/albums/m497/holleyteatime/th_bowboarder_pink_light.gif">
+    <button><img src="http://img.photobucket.com/albums/v252/shaquanda/dumpitydump/pixelwixel/211.gif"> socials</button>
+    <button><img src="http://img.photobucket.com/albums/v252/shaquanda/dumpitydump/pixelwixel/211.gif"> projects</button>
+  </div>
+
+  <!-- Comm -->
+  <div class="comm">
+    <div class="statusbar">
+      <div class="status-light"></div>
+      <span class="status-text">status: offline ♡</span>
+    </div>
+
+    <div class="imagemask">dev log & links ( ˘͈ ᵕ ˘͈♡)</div>
+    <div class="top">
+      <img src="http://media.tumblr.com/tumblr_m5uucwpfjO1ql6slc.gif">
+      <img src="http://media.tumblr.com/tumblr_m5uud9DkSv1ql6slc.gif">
+      <img src="http://media.tumblr.com/tumblr_m5uudoyyzu1ql6slc.gif">
+      <img src="http://media.tumblr.com/tumblr_m5uub2e7Ui1ql6slc.gif">
+    </div>
+
+    <div class="scrollbox">
+      <hello>1.</hello> currently studying <bye>information technology</bye> and exploring how <bye>software</bye> + <bye>design</bye> connect together ♡ my focus right now is web development and <bye>cybersecurity</bye>.<br><br>
+      <hello>2.</hello> check out my <a href="https://github.com/emiliasingleton0" target="_blank"><bye>github</bye></a> (｡•ᴗ-) ✧ i upload my projects there — everything from small <bye>html/css</bye> builds to early <bye>python</bye> scripts.<br><br>
+      <hello>3.</hello> currently building a small <bye>interactive portfolio</bye> using <bye>javascript</bye> and <bye>react</bye> ✧ i want to make everything calm, pastel, and organized while still feeling like *me* ₊˚ʚ♡ɞ₊˚<br><br>
+      <hello>4.</hello> learning how to structure cleaner code and optimize layouts for both aesthetics and usability. i love making things that look gentle but run efficiently.<br><br>
+      <hello>5.</hello> future goals → contribute to open-source cybersecurity projects, design personal web tools, and create safe online spaces for students learning tech ♡<br><br>
+      <hello>6.</hello> fascinated by <bye>network security</bye> and <bye>UI/UX</bye> — how something feels and how it functions are deeply connected.<br><br>
+      <hello>7.</hello> documenting my growth in code like an art diary. debugging, designing, improving little by little each day ₊˚.༄
+    </div>
+  </div>
+
+  <img src="http://3.bp.blogspot.com/-49Z3VyWL_JQ/Tkndb7G4p2I/AAAAAAAAAYw/c21qAF4q7BM/s1600/20100421210815a10.gif"> <!-- Decorative image under intro -->
+  <img src="https://i.pinimg.com/736x/5c/fe/75/5cfe753a66b8dc3812656cc2c4f7350d.jpg" class="bg-img">
+
+</div> 
+</body>
+</html>

@@ -122,6 +122,8 @@ body {
   height: 100%;
   background-image: url('https://jpgneocityhost.carrd.co/assets/images/image01.jpg?v=7504c318');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 11px;
 }
 
@@ -167,7 +169,10 @@ body {
   -webkit-text-stroke: 0.1px black;
   text-align: left;
   margin-bottom: 1px;
-  background-image: radial-gradient(#fff0f5 30%, transparent 70%);
+  background-image: radial-gradient(circle at center, #fff0f5 30%, transparent 70%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .four {
@@ -337,6 +342,23 @@ body {
 .scrollbox .hello { color: #ff66a3; font-weight: bold; }
 .scrollbox .bye { color: #c64b7d; font-style: italic; }
 
+.new-tag {
+  color: #ff5c9f;
+  font-size: 0.8em;
+  font-weight: bold;
+  animation: newBlink 1s infinite;
+}
+
+@keyframes newBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
+
 /* ✨ Universal soft glow hover effect ✨ */
 .container-one, .outer, .inner, .in, .intro, .ipad, .comm, .navi button {
   transition: all 0.4s ease-in-out;
@@ -361,7 +383,7 @@ body {
 <div class="container">
 
   <div class="container-one">
-    <img src="http://media.tumblr.com/837a33b1ee5939149a9874e9b5c59168/tumblr_inline_mlm825BCTd1qz4rgp.gif">
+    <img src="https://media.tumblr.com/837a33b1ee5939149a9874e9b5c59168/tumblr_inline_mlm825BCTd1qz4rgp.gif">
     <div id="name">emi's portfolio</div>
   </div>
 
@@ -421,26 +443,64 @@ body {
 
     <div class="imagemask">dev log & links ( ˘͈ ᵕ ˘͈♡)</div>
     <div class="top">
-      <img src="http://media.tumblr.com/tumblr_m5uucwpfjO1ql6slc.gif">
-      <img src="http://media.tumblr.com/tumblr_m5uud9DkSv1ql6slc.gif">
-      <img src="http://media.tumblr.com/tumblr_m5uudoyyzu1ql6slc.gif">
-      <img src="http://media.tumblr.com/tumblr_m5uub2e7Ui1ql6slc.gif">
+      <img src="https://media.tumblr.com/tumblr_m5uucwpfjO1ql6slc.gif">
+      <img src="https://media.tumblr.com/tumblr_m5uud9DkSv1ql6slc.gif">
+      <img src="https://media.tumblr.com/tumblr_m5uudoyyzu1ql6slc.gif">
+      <img src="https://media.tumblr.com/tumblr_m5uub2e7Ui1ql6slc.gif">
     </div>
 
     <div class="scrollbox">
-      <span class="hello">1.</span> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ♡ ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+      <span class="hello">07.13.26 ♡</span>
+      <span class="new-tag">NEW!</span><br>
+      moved some things around on my homepage and finally fixed the spacing...
+      css is cooperating for once (˶ᵔ ᵕ ᵔ˶)
+      <br><br>
 
-      <span class="hello">2.</span> check out my <a href="#" target="_blank"><span class="bye">portfolio</span></a> (｡•ᴗ-) ✧ lorem ipsum dolor sit amet consectetur adipisicing elit — everything from small <span class="bye">sample projects</span> to experimental <span class="bye">creative layouts</span>.<br><br>
+      <span class="hello">07.08.26 ☕</span><br>
+      jazz café v2 is live!!
+      added café ambience, new animations, and some tiny details ♫
+      <br><br>
 
-      <span class="hello">3.</span> currently building a small <span class="bye">interactive concept</span> using <span class="bye">placeholder text</span> and <span class="bye">visual elements</span> ✧ elements˚ʚ♡ɞ₊˚<br><br>
+      <span class="hello">07.07.26 🚀</span><br>
+      fixed the tle data source for my iss mission ops tracker.
+      learned more about cors than i ever wanted to...
+      <br><br>
 
-      <span class="hello">4.</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+      <span class="hello">07.04.26 📷</span><br>
+      currently documenting my raspberry pi thermal photobooth build ♡
+      <br><br>
 
-      <span class="hello">5.</span> future goals: <span class="bye">creative development</span> + minimalist <span class="bye">frontend aesthetics</span>. lorem ipsum dolor sit amet consectetur adipisicing elit ₊˚˳♡₊˚˳
+      <span class="hello">06.30.26 ✧</span><br>
+      learning more javascript and making way too many side projects...
+      <br><br>
+
+      <span class="bye">more updates soon ♡</span>
     </div>
   </div>
 </div>
+
+<script>
+const statuses = [
+  "studying at ucf ♡",
+  "probably coding...",
+  "listening to jazz ♫",
+  "dreaming about space 🚀",
+  "debugging something (╥﹏╥)",
+  "building silly little websites ♡",
+  "working on a side project...",
+  "currently overthinking my css",
+  "somewhere in orlando ☁️"
+];
+
+const statusText = document.querySelector(".status-text");
+
+if (statusText) {
+  const randomStatus =
+    statuses[Math.floor(Math.random() * statuses.length)];
+
+  statusText.textContent = "status: " + randomStatus;
+}
+</script>
+
 </body>
 </html>
-
-

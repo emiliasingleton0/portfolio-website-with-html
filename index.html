@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EmiOS — Emilia Singleton's interactive webcore portfolio featuring frontend, aerospace, and creative coding projects.">
+  <title>♡ EmiOS — emi's portfolio</title>
+  <link rel="icon" href="https://i.imgur.com/8ZSX4kW.gif">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="desktop-shell" aria-label="EmiOS interactive portfolio">
+    <header class="hero-panel">
+      <h1 id="name">emi's portfolio</h1>
+      <p class="hero-subtitle">EmiOS v1.0 ♡ a tiny corner of the internet</p>
+    </header>
+
+    <section class="top-row" aria-label="Introduction">
+      <div class="profile-frame" aria-label="Profile image"></div>
+      <div class="intro-card">
+        <div class="intro-title">introduction <img src="https://i.imgur.com/3ghgoru.gif" alt=""></div>
+        <p>hi! i'm emi, an orlando-based IT student at <mark>ucf</mark> ☁️ (◡‿◡✿) i love building interactive websites that feel personal, playful, and a little unexpected. lately i've been experimenting with frontend development, APIs, maps, aerospace data, and creative interfaces ♡</p>
+        <img class="intro-decoration" src="https://i.imgur.com/yilpIlt.gif" alt="">
+      </div>
+    </section>
+
+    <section class="chat-panel" aria-label="About me conversation">
+      <div class="chat-device"><div class="chat-screen"><div class="chat">
+        <div class="bubble">hey...?</div>
+        <div class="bubble bubble-me">omg hi!! welcome to my little corner of the internet ♡</div>
+        <div class="bubble">what do you do?</div>
+        <div class="bubble bubble-me">i'm studying information technology at ucf! mostly coding, breaking things, and then figuring out why they broke lol</div>
+        <div class="bubble">what are you building rn?</div>
+        <div class="bubble bubble-me">an iss tracker, a jazz café study timer, and a raspberry pi thermal photobooth ₊˚⊹♡</div>
+        <div class="bubble">dream job?</div>
+        <div class="bubble bubble-me">something involving tech + space 🚀 nasa would be pretty cool...</div>
+        <div class="bubble">anything else?</div>
+        <div class="bubble bubble-me">i love jazz, creative websites, japan, and making things unnecessarily cute ♡</div>
+      </div></div></div>
+    </section>
+
+    <figure class="middle-art">
+      <img src="assets/images/middle-image.png" alt="Decorative pink webcore collage">
+    </figure>
+
+    <nav class="navigation" aria-label="Portfolio navigation">
+      <button class="nav-button" data-window="socials-window"><span aria-hidden="true">♡</span> socials</button>
+      <button class="nav-button" data-window="projects-window"><span aria-hidden="true">✧</span> projects</button>
+      <button class="nav-button" data-window="about-window"><span aria-hidden="true">☁</span> about</button>
+    </nav>
+
+    <aside class="devlog-panel" aria-label="Status and development log">
+      <div class="statusbar"><span class="status-light" aria-hidden="true"></span><span class="status-text">status: loading...</span></div>
+      <div class="devlog-title">dev log & links ( ˘͈ ᵕ ˘͈♡)</div>
+      <div class="pixel-row" aria-hidden="true">
+        <img src="https://media.tumblr.com/tumblr_m5uucwpfjO1ql6slc.gif" alt="">
+        <img src="https://media.tumblr.com/tumblr_m5uud9DkSv1ql6slc.gif" alt="">
+        <img src="https://media.tumblr.com/tumblr_m5uudoyyzu1ql6slc.gif" alt="">
+        <img src="https://media.tumblr.com/tumblr_m5uub2e7Ui1ql6slc.gif" alt="">
+      </div>
+      <div class="scrollbox" id="dev-log"></div>
+    </aside>
+
+    <section class="desktop-window" id="projects-window" aria-hidden="true">
+      <div class="window-titlebar"><span>projects.exe ✧</span><button class="window-close" aria-label="Close projects window">×</button></div>
+      <div class="window-content project-grid">
+        <article class="project-card">
+          <p class="project-icon">📡</p><h2>ISS Mission Ops Map</h2>
+          <p>A browser-based ISS mission dashboard with live orbital tracking, TLE/SGP4 propagation, pass prediction, telemetry, and source transparency.</p>
+          <p class="tech-line">JavaScript · Leaflet · SGP4 · APIs</p>
+          <div class="project-links"><a href="https://emiliasingleton0.github.io/iss-mission-ops-map/" target="_blank" rel="noopener">live site</a><a href="https://github.com/emiliasingleton0/iss-mission-ops-map" target="_blank" rel="noopener">github</a></div>
+        </article>
+        <article class="project-card">
+          <p class="project-icon">☕</p><h2>Jazz Café Study Timer</h2>
+          <p>An interactive study experience with city-based jazz playlists, animated records, café ambience, timers, and a story-like interface.</p>
+          <p class="tech-line">HTML · CSS · JavaScript · YouTube</p>
+          <div class="project-links"><a href="https://emiliasingleton0.github.io/jazz-cafe-study-timer/" target="_blank" rel="noopener">live site</a><a href="https://github.com/emiliasingleton0/jazz-cafe-study-timer" target="_blank" rel="noopener">github</a></div>
+        </article>
+        <article class="project-card">
+          <p class="project-icon">📷</p><h2>Thermal Print Photobooth</h2>
+          <p>A Raspberry Pi build combining a camera, physical button, and ESC/POS thermal printer into a DIY instant photobooth.</p>
+          <p class="tech-line">Raspberry Pi · Python · GPIO · Hardware</p>
+          <div class="project-links"><a href="https://github.com/emiliasingleton0" target="_blank" rel="noopener">github profile</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="desktop-window" id="socials-window" aria-hidden="true">
+      <div class="window-titlebar"><span>socials.url ♡</span><button class="window-close" aria-label="Close socials window">×</button></div>
+      <div class="window-content social-links">
+        <a href="https://github.com/emiliasingleton0" target="_blank" rel="noopener"><strong>GitHub</strong><span>@emiliasingleton0</span></a>
+        <a href="https://eminems.neocities.org/" target="_blank" rel="noopener"><strong>Neocities</strong><span>eminems.neocities.org</span></a>
+      </div>
+    </section>
+
+    <section class="desktop-window" id="about-window" aria-hidden="true">
+      <div class="window-titlebar"><span>about-me.txt ☁</span><button class="window-close" aria-label="Close about window">×</button></div>
+      <div class="window-content about-window-content">
+        <h2>hi, i'm emi ♡</h2>
+        <p>I'm an Information Technology student at UCF interested in frontend development, interactive experiences, APIs, data visualization, and the intersection of technology and aerospace.</p>
+        <p>I like projects that feel useful <em>and</em> memorable. This portfolio is intentionally inspired by personal websites, webcore, old desktop interfaces, and the playful internet.</p>
+        <h3>currently exploring</h3>
+        <div class="skill-tags"><span>HTML/CSS</span><span>JavaScript</span><span>React</span><span>C</span><span>APIs</span><span>Git/GitHub</span><span>Raspberry Pi</span><span>Aerospace tech</span></div>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
